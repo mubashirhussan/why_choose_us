@@ -12,10 +12,13 @@ export default function WhyChooseUs({ strapiData }) {
     return <div>No data available</div>;
   }
   const [activeTab, setActiveTab] = useState(strapiData.features[0]?.id || "");
+  //   const imageUrl = strapiData.mainImage?.url
+  //     ? `${process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337"}${
+  //         strapiData.mainImage.url
+  //       }`
+  //     : "/fallback-image.jpg";
   const imageUrl = strapiData.mainImage?.url
-    ? `${process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337"}${
-        strapiData.mainImage.url
-      }`
+    ? strapiData.mainImage?.url
     : "/fallback-image.jpg";
   return (
     <section className="py-8 sm:py-12 md:py-16 px-4 max-w-7xl mx-auto">

@@ -10,6 +10,14 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "luminous-presence-61d8f148f4.media.strapiapp.com",
+      },
+      {
+        protocol: "https",
+        hostname: "luminous-presence-61d8f148f4.strapiapp.com",
+      },
+      {
+        protocol: "https",
         hostname: "images.unsplash.com",
         port: "",
         pathname: "/**",
