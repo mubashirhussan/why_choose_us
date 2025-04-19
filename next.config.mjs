@@ -4,7 +4,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "insightx-images.s3.eu-north-1.amazonaws.com",
+        hostname: "luminous-presence-61d8f148f4.strapiapp.com",
         port: "",
         pathname: "/**",
       },
