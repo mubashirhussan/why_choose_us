@@ -8,6 +8,9 @@ import { cn } from "../lib/utils";
 
 export default function WhyChooseUs({ strapiData }) {
   console.log("strapiData", strapiData);
+  if (!strapiData || !strapiData.features) {
+    return <div>No data available</div>;
+  }
   const [activeTab, setActiveTab] = useState(strapiData.features[0]?.id || "");
   const imageUrl = strapiData.mainImage?.url
     ? `${process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337"}${
