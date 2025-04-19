@@ -4,7 +4,7 @@ const STRAPI_URL =
 export async function fetchWhyChooseUs() {
   try {
     const response = await fetch(
-      `${NEXT_PUBLIC_STRAPI_URL}/api/why-choose-uses?populate=*`,
+      `${STRAPI_URL}/api/why-choose-uses?populate=*`,
       {
         next: { revalidate: 60 }, // Optional revalidation
       }
