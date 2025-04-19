@@ -1,9 +1,10 @@
-const STRAPI_URL = process.env.STRAPI_URL || "http://localhost:1337";
+const STRAPI_URL =
+  process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337";
 
 export async function fetchWhyChooseUs() {
   try {
     const response = await fetch(
-      `${STRAPI_URL}/api/why-choose-uses?populate=*`,
+      `${NEXT_PUBLIC_STRAPI_URL}/api/why-choose-uses?populate=*`,
       {
         next: { revalidate: 60 }, // Optional revalidation
       }
