@@ -8,7 +8,9 @@ export async function fetchWhyChooseUs() {
       {
         headers: {
           "Cache-Control": "no-cache",
+          // You might want to add these additional headers for better control
         },
+        cache: "no-store", // This is the modern equivalent for fetch
       }
     );
 
