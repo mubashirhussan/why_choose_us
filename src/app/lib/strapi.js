@@ -4,7 +4,12 @@ const STRAPI_URL =
 export async function fetchWhyChooseUs() {
   try {
     const response = await fetch(
-      `${STRAPI_URL}/api/why-choose-uses?populate=*`
+      `${STRAPI_URL}/api/why-choose-uses?populate=*`,
+      {
+        headers: {
+          "Cache-Control": "no-cache",
+        },
+      }
     );
 
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
