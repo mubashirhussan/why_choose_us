@@ -1,6 +1,6 @@
 // const STRAPI_URL =
 //   process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337";
-const STRAPI_URL = "  https://luminous-presence-61d8f148f4.strapiapp.com";
+const STRAPI_URL = "https://luminous-presence-61d8f148f4.strapiapp.com";
 
 export async function fetchWhyChooseUs() {
   try {
