@@ -6,11 +6,7 @@ import { fetchWhyChooseUs } from "../lib/strapi";
 // import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default async function WhyChooseUsPage() {
-  // const data = await fetchWhyChooseUs();
+  const data = await fetchWhyChooseUs();
 
-  return (
-    <WhyChooseUs
-    //  strapiData={data}
-    />
-  );
+  return <WhyChooseUs strapiData={data} />;
 }
