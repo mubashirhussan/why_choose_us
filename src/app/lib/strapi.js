@@ -1,14 +1,17 @@
 // const STRAPI_URL =
 //   process.env.NEXT_PUBLIC_STRAPI_URL || "http://localhost:1337";
-const STRAPI_URL = "https://luminous-presence-61d8f148f4.strapiapp.com";
+// const STRAPI_URL = "https://luminous-presence-61d8f148f4.strapiapp.com";
 
 export async function fetchWhyChooseUs() {
   try {
     const response = await fetch(
-      `${STRAPI_URL}/api/why-choose-uses?populate=*`,
+      `https://luminous-presence-61d8f148f4.strapiapp.com/api/why-choose-uses?populate=*`,
       {
         headers: {
           "Cache-Control": "no-cache",
+
+          "Content-Type": "application/json",
+
           // You might want to add these additional headers for better control
         },
         cache: "no-store", // This is the modern equivalent for fetch
